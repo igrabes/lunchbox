@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LunchBox - Explore the vast food selection that New York City has to offer -- right from your desk.</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>      
+  <meta http-equiv="Content-type" value="text/html; charset=utf-8" />
+	<meta name="title" content="" />
+	<meta name="description" content="LunchBox is a weekly lunch subscription that is delivered to you at work, so you can continue to enjoy New York's finest foods all the time." /> 
+	<meta property="og:title" content="LunchBox - " /><meta property="og:type" content="company" /><meta property="og:site_name" content="LunchBox" /><meta property="og:url" content="http://www.golunchbox.com" /><meta property="og:image" content="https://launchrock-assets.s3.amazonaws.com/facebook-files/jlGQLH1gQ1izzAf.png" /><meta property="og:description" content="I just signed up for an exclusive lunch delivery service called LunchBox. They curate the highest quality and unique lunches in the city and will deliver it to my desk!" /> 
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-28399200-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

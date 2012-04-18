@@ -16,4 +16,12 @@ nav {
   font-size: 14px;
 }   
 
+
+#signup_response {
+  display:none;
+}
+ 
+.display_share {
+  display:block;
+}
          

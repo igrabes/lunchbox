@@ -1,0 +1,16 @@
+<h1>Signup to receive your LunchBox!</h1>
+
+<div id="msg"></div>
+<div id="signup_request">
+	<%= render 'form' %>
+</div>
+<div id="signup_response" style="display:visible">
+	<h3> Share this with friends to receive a deal! </h3> 
+	<textarea id="social_media_message">I just signed up to receive LunchBox. Join me!</textarea> 
+	<p id="share_buttons">
+		<a id="twitter_share_button" href="javascript:void(0)">Tweet</a>
+  	<a id="facebook_share_button" href="javascript:void(0)">Share on Facebook</a>
+	</p>
+</div>
+
+<%= link_to 'Back', users_path %>

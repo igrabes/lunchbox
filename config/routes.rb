@@ -1,5 +1,9 @@
 Lunchbox::Application.routes.draw do
   
+  match '/signup_now' => "users#new" 
+  
+  resources :users
+
   # constraints(Subdomain) do
   #   match '/' => 'companies#signup'
   #  end 
@@ -7,6 +11,7 @@ Lunchbox::Application.routes.draw do
   root :to => "pages#index"
  
   match '/signup' => 'pages#signup'
+  match '/order' => 'pages#order'
  
   # The priority is based upon order of creation:
   # first created -> highest priority.

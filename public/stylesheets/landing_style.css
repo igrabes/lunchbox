@@ -23,5 +23,15 @@ nav {
  
 .display_share {
   display:block;
+}                  
+
+#social_media_message {
+  width: 550px;
+  height: 80px;
+  padding: 10px;
+  display: block;
+  line-height: 1.5em;
+  margin: 0 auto 15px;
+  font-size: 135%
 }
          

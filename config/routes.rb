@@ -1,6 +1,7 @@
 Lunchbox::Application.routes.draw do
   
   match '/signup_now' => "users#new" 
+ 
   
   resources :users
 
@@ -11,7 +12,8 @@ Lunchbox::Application.routes.draw do
   root :to => "pages#index"
  
   match '/signup' => 'pages#signup'
-  match '/order' => 'pages#order'
+  match '/order' => 'pages#order' 
+  match '/ey' => 'pages#ey'
  
   # The priority is based upon order of creation:
   # first created -> highest priority.

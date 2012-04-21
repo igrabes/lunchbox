@@ -85,6 +85,7 @@ PLATFORMS
 
 DEPENDENCIES
   jquery-rails
+  mail
   pry
   rails (= 3.0.9)
   sqlite3

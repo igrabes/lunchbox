@@ -1,0 +1,186 @@
+@font-face {
+font-family: Museo_Slab_500;
+src: url("/fonts/Museo_Slab_500.otf") format("opentype");
+} 
+@font-face {
+font-family: Museo_300;
+src: url("/fonts/Museo_300.otf") format("opentype");  
+}  
+@font-face {
+font-family: Museo_500;
+src: url("/fonts/Museo_500.otf") format("opentype");  
+} 
+@font-face {
+font-family: Museo_700;
+src: url("/fonts/Museo_700.otf") format("opentype");  
+}
+
+
+body{
+  background-color:#e2e2e2;  
+}
+
+.ey_header {
+  background-color:#ea0a3a; 
+  height:280px;   
+}      
+
+.ey_header img {  
+  margin-top:40px;
+  margin-left:20px;
+  width:300px; 
+  height:150px; 
+}  
+
+.ey_background {
+  background-color:;
+} 
+
+.ey_middle_bar { 
+  background-color:#dbdbdb;
+  height:130px; 
+  -moz-box-shadow: -2px 2px 2px #888;
+  -webkit-box-shadow: -2px 2px 2px #888;
+  box-shadow: -2px 2px 2px #888;
+}      
+
+#pricing {  
+  font-size:16px; 
+  padding-top:7px;
+  padding-bottom:10px;
+  text-align:center;
+}
+
+.order_now_button {
+  font-size:24px;
+  padding-left:25px;
+  padding-right:25px;
+  margin-left: 95px; 
+  text-align: center;
+} 
+
+#timer {
+  text-align:center;
+  font-size: 16px;
+  padding-top:15px;
+}
+
+.menu_display {
+  background-color: #fff;
+  margin-top: -120px; 
+  margin-left: 0px; 
+  height:750px;  
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  position:inherit;
+}  
+ 
+#restaurant_details {
+  width:350px;
+  padding-left:25px;
+  padding-top: 30px;
+}    
+
+#restaurant_details h1 {
+  font-family: Museo_500, Helvetica, Verdana, Sans-Serif;   
+  width:350px; 
+  font-size:46px;
+  padding-left:25px;
+  padding-top: 30px; 
+}   
+
+#restaurant_descrip { 
+  font-family: Museo_300, Helvetica, Verdana, Sans-Serif;
+  font-size:19px;
+  width:350px;
+  line-height:150%; 
+  padding-bottom:25px;
+  padding-left:25px;
+  padding-top: 30px;  
+}
+
+#divider {
+  border-bottom:2px solid #e1e1e1; 
+  /*-moz-box-shadow: -2px 2px 2px #e1e1e1;
+    -webkit-box-shadow: -2px 2px 2px #e1e1e1;
+    box-shadow: 2px 2px 2px #e1e1e1;*/
+}
+
+.testimonial {
+  margin-top:20px;  
+  
+} 
+
+.testimonial h4 {  
+  font-family: Museo_500, Helvetica, Verdana, Sans-Serif;
+  font-color:#717171; 
+  font-size:22px;
+  text-align:center;
+  padding-bottom: 20px; 
+  padding:15px;
+}   
+   
+.first_testi {
+  background: url(http://placehold.it/260x180); 
+  width: 260px;   
+  height:180px; 
+  margin-top: 25px;
+  margin-left:35px;
+}
+
+.second_testi {
+  background: url(http://placehold.it/260x180);   
+  width: 260px;   
+  height:180px;
+  margin-top: 10px;
+  margin-left:35px;
+}
+/*.second_testi img { 
+  margin-left:35px; 
+} */
+ 
+#menu_choices {
+  padding:20px;
+}
+
+#menu_choices h2 {
+  font-family: Museo_500, Helvetica, Verdana, Sans-Serif;  
+  padding-bottom:20px;
+}  
+
+/* Trying to get rid of tables  */
+
+#dish_titles ul {  
+  font-family: Museo_500, Helvetica, Verdana, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  list-style-type:none; 
+  text-align:center;
+}    
+  
+#dish_titles ul li {
+  display: inline; 
+  padding:40px; 
+  font-size:16px;
+  text-align:center;
+} 
+ 
+#dish_descriptions ul {
+  margin: 0;
+  padding: 0;
+  list-style-type:none; 
+  text-align:center;   
+  width: 160px;
+}    
+  
+#dish_descriptions ul li {   
+  display: inline; 
+  padding:40px; 
+  font-size:14px;
+/*  white-space:inherit; */
+}
+
+#dish_images img { 
+  padding:30px;
+} 

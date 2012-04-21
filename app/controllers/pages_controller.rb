@@ -1,5 +1,7 @@
 class PagesController < ApplicationController  
   
+  layout nil, :only => [:ey]
+  
   def index
   end
   
@@ -7,5 +9,8 @@ class PagesController < ApplicationController
   end
   
   def order
+  end 
+  
+  def ey
   end
 end

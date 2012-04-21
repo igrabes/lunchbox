@@ -37,8 +37,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
 
-    respond_to do |format|
-      if @user.save
+    respond_to do |format|  
+      if @user.save  
+        UserMailer.registration_confirmation(@user).deliver
         format.html { redirect_to(@user, :notice => 'User was successfully created.') } 
         format.js
       else

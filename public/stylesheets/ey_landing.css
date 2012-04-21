@@ -122,65 +122,72 @@ body{
 }   
    
 .first_testi {
-  background: url(http://placehold.it/260x180); 
-  width: 260px;   
-  height:180px; 
+  background: #fff; 
+  width: 270px;   
+  height:145px; 
   margin-top: 25px;
-  margin-left:35px;
+  margin-left:35px; 
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}  
+
+.first_testi p { 
+  font-family: Museo_300, Helvetica, Verdana, Sans-Serif; 
+  font-size: 16px; 
+  padding: 30px; 
 }
 
 .second_testi {
-  background: url(http://placehold.it/260x180);   
-  width: 260px;   
-  height:180px;
+  background: #fff;   
+  width: 270px;   
+  height:145px;
   margin-top: 10px;
-  margin-left:35px;
-}
-/*.second_testi img { 
   margin-left:35px; 
-} */
- 
-#menu_choices {
-  padding:20px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+} 
+
+.second_testi p { 
+  font-family: Museo_300, Helvetica, Verdana, Sans-Serif; 
+  font-size: 16px; 
+  padding: 30px; 
 }
 
-#menu_choices h2 {
-  font-family: Museo_500, Helvetica, Verdana, Sans-Serif;  
+
+.menu_choices h2 {
+  font-family: Museo_500, Helvetica, Verdana, Sans-Serif;   
+  margin: 15px 0 0 15px;
   padding-bottom:20px;
 }  
 
-/* Trying to get rid of tables  */
 
-#dish_titles ul {  
-  font-family: Museo_500, Helvetica, Verdana, Sans-Serif;
-  margin: 0;
-  padding: 0;
-  list-style-type:none; 
-  text-align:center;
-}    
-  
-#dish_titles ul li {
-  display: inline; 
-  padding:40px; 
-  font-size:16px;
-  text-align:center;
-} 
- 
-#dish_descriptions ul {
-  margin: 0;
-  padding: 0;
-  list-style-type:none; 
-  text-align:center;   
-  width: 160px;
-}    
-  
-#dish_descriptions ul li {   
-  display: inline; 
-  padding:40px; 
-  font-size:14px;
-/*  white-space:inherit; */
+.menu_choices ul {
+  list-style:none;
+  margin-left:40px;
 }
 
-#dish_images img { 
-  padding:30px;
+.menu_choices li {
+  width: 220px;
+  float: left;
+  color: #333;
+  margin: 0 20px 10px 0;
 } 
+
+.menu_choices .dish_title {  
+  font-family: Museo_500, Helvetica, Verdana, Sans-Serif;
+  font-size:16px;
+  margin: 10px 0 10px 0px;
+  
+} 
+
+.menu_choices .dish_image {
+  margin:0 0 15px 0;
+}  
+
+.menu_choices .dish_description {  
+  font-size:14px;
+  width: 170px; 
+  
+}

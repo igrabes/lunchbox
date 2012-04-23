@@ -1,8 +1,9 @@
 class PagesController < ApplicationController  
   
-  layout nil, :only => [:ey]
+  layout nil, :except => [:index, :signup, :order]
   
-  def index
+  def index  
+    render :layout => "application"
   end
   
   def signup 

@@ -1,3 +1,7 @@
+body { font-family: web-font, fallback-fonts; }
+strong { font-family: web-font-bold; }
+em { font-family: web-font-italic; }
+
 @font-face {
 font-family: Museo_Slab_500;
 src: url("/fonts/Museo_Slab_500.otf") format("opentype");
@@ -21,7 +25,7 @@ body{
 }
 
 .ey_header {
-  background-color:#ea0a3a; 
+  background-color:#eb1f39; 
   height:280px;   
 }      
 
@@ -44,11 +48,16 @@ body{
   box-shadow: -2px 2px 2px #888;
 }      
 
-#pricing {  
-  font-size:16px; 
+#pricing {
+  font-family: Museo_700, Helvetica, Verdana, Sans-Serif;   
+  font-size:22px; 
   padding-top:7px;
   padding-bottom:10px;
   text-align:center;
+}   
+
+.free_deliv {
+  font-family: Museo_300, Helvetica, Verdana, Sans-Serif;  
 }
 
 .order_now_button {
@@ -69,7 +78,7 @@ body{
   background-color: #fff;
   margin-top: -120px; 
   margin-left: 0px; 
-  height:750px;  
+  height:100%;  
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
@@ -77,14 +86,14 @@ body{
 }  
  
 #restaurant_details {
-  width:350px;
+  width:390px;
   padding-left:25px;
   padding-top: 30px;
 }    
 
 #restaurant_details h1 {
   font-family: Museo_500, Helvetica, Verdana, Sans-Serif;   
-  width:350px; 
+  width:380px; 
   font-size:46px;
   padding-left:25px;
   padding-top: 30px; 
@@ -93,7 +102,7 @@ body{
 #restaurant_descrip { 
   font-family: Museo_300, Helvetica, Verdana, Sans-Serif;
   font-size:19px;
-  width:350px;
+  width:380px;
   line-height:150%; 
   padding-bottom:25px;
   padding-left:25px;
@@ -105,11 +114,15 @@ body{
   /*-moz-box-shadow: -2px 2px 2px #e1e1e1;
     -webkit-box-shadow: -2px 2px 2px #e1e1e1;
     box-shadow: 2px 2px 2px #e1e1e1;*/
+} 
+
+#steps {
+  float:right; 
+  margin: -70px -40px 0 0 ;
 }
 
 .testimonial {
   margin-top:20px;  
-  
 } 
 
 .testimonial h4 {  
@@ -136,7 +149,19 @@ body{
   font-family: Museo_300, Helvetica, Verdana, Sans-Serif; 
   font-size: 16px; 
   padding: 30px; 
+}  
+
+#top_testi_quote img {
+  float:left; 
+  padding:5px;
 }
+
+#bottom_testi_quote img {
+  float:right;   
+  padding:5px;
+  margin-top:-40px;
+} 
+
 
 .second_testi {
   background: #fff;   
@@ -168,12 +193,23 @@ body{
   margin-left:40px;
 }
 
-.menu_choices li {
-  width: 220px;
+.menu_choices li {   
+  font-family: Museo_300, Helvetica, Verdana, Sans-Serif;
+  font-color:#333333; 
+  padding:10px; 
+  border:1px solid #919191;
+  width: 200px;
   float: left;
   color: #333;
-  margin: 0 20px 10px 0;
-} 
+  margin: 0 20px 10px 0;    
+  -moz-box-shadow: -2px 2px 2px #888;
+  -webkit-box-shadow: -2px 2px 2px #888;
+  box-shadow: 1px 1px 1px #888;
+}  
+
+.bolded {
+  font-family: Museo_700, Helvetica, Verdana, Sans-Serif;
+}
 
 .menu_choices .dish_title {  
   font-family: Museo_500, Helvetica, Verdana, Sans-Serif;
@@ -183,8 +219,13 @@ body{
 } 
 
 .menu_choices .dish_image {
-  margin:0 0 15px 0;
-}  
+  margin:0 0 15px 0;   
+} 
+
+.menu_divider {
+  border-bottom:2px solid #e1e1e1; 
+  margin-bottom: 20px;
+} 
 
 .menu_choices .dish_description {  
   font-size:14px;

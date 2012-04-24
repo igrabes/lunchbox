@@ -27,7 +27,8 @@ body{
 .ey_header {
   background-color:#ec1f3b; 
   height:280px;  
-  width:1258px; 
+  width:1258px;
+  overflow:hidden; 
 }      
 
 .ey_header img {  
@@ -41,6 +42,7 @@ body{
   background-color:#dbdbdb;
   height:130px;
   width:370px; 
+  float:left;
   -moz-box-shadow: -2px 2px 2px #888;
   -webkit-box-shadow: -2px 2px 2px #888;
   box-shadow: -2px 2px 2px #888;
@@ -74,14 +76,15 @@ body{
 
 .menu_display {
   background-color: #fff;
-  margin-top: -120px; 
-  margin-left: 0px; 
+  margin-top: -220px; 
+  margin-left: 390px; 
   height:980px; 
   width:770px; 
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
-/*  position:inherit; */
+  position:relative;
+  overflow:visible; 
 }  
  
 #restaurant_details {

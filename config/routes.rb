@@ -1,8 +1,10 @@
 Lunchbox::Application.routes.draw do
   
-  match '/signup_now' => "users#new" 
- 
+  match '/signup' => 'subscribers#new' 
+  resources :subscribers
   
+  
+  match '/signup_now' => "users#new"
   resources :users
 
   # constraints(Subdomain) do
@@ -11,7 +13,7 @@ Lunchbox::Application.routes.draw do
   
   root :to => "pages#index"
  
-  match '/signup' => 'pages#signup'
+  
   match '/order' => 'pages#order' 
   match '/ey' => 'pages#ey'
  

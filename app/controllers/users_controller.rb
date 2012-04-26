@@ -39,7 +39,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|  
       if @user.save  
-        UserMailer.registration_confirmation(@user).deliver
+        UserMailer.registration_confirmation(@user).deliver  
         format.html { redirect_to(@user, :notice => 'User was successfully created.') } 
         format.js
       else

@@ -1,0 +1,26 @@
+<script type="text/javascript">
+
+$(document).ready(function () {
+    $('.step1').siblings().hide(); // hide all except step 1
+		$('.continue').click(function(){
+			$(this).closest('.step').hide().next('.step').show();
+			return false;
+			});
+});
+</script>
+
+<%= form_for(@subscriber) do |f| %>
+	
+	<div class="step step1">
+		<%= f.label :address %>
+		<%= f.text_field :address %>
+		<button class="continue">Continue</button>
+	</div>
+	<div class="step step2">
+		<%= f.label :email %>
+		<%= f.text_field :email %>
+    <%= f.submit %>
+  </div>
+<% end %>
+
+

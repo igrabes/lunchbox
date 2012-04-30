@@ -101,7 +101,19 @@ body{
   border-radius: 7px;
   position:relative;
   overflow:visible; 
-}  
+}   
+
+.menu_item_name {
+  font-family: Museo_700, Helvetica, Verdana, Sans-Serif;  
+}
+
+.text_center {
+  text-align:center;
+}         
+
+.add_on {
+  font-family: Museo_500, Helvetica, Verdana, Sans-Serif;
+}
  
 #restaurant_details {
   width:390px;

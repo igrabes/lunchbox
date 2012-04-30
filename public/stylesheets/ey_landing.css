@@ -39,7 +39,7 @@ body{
 }  
 
 .ey_middle_bar { 
-  height:150px;
+  height:200px;
   width:370px; 
   float:left;
   -moz-box-shadow: -2px 2px 2px #888;
@@ -87,14 +87,15 @@ body{
 #timer {
   text-align:center;
   font-size: 16px;
-  padding-top:15px;
-}
+  margin-top:-5px;
+  padding-bottom:5px;
+}  
 
 .menu_display {
   background-color: #fff;
   margin-top: -220px; 
   margin-left: 390px; 
-  height:980px; 
+  height:1230px; 
   width:770px; 
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -112,11 +113,12 @@ body{
 }         
 
 .add_on {
-  font-family: Museo_500, Helvetica, Verdana, Sans-Serif;
+  font-family: Museo_500, Helvetica, Verdana, Sans-Serif;   
+  font-size:12px;
 }
  
 #restaurant_details {
-  width:390px;
+  width:380px;
   padding-left:25px;
   padding-top: 30px;
 }    
@@ -124,14 +126,20 @@ body{
 #restaurant_details h1 {
   font-family: Museo_500, Helvetica, Verdana, Sans-Serif;   
   width:380px; 
-  font-size:46px;
+  font-size:36px;
   margin-left:19px;
-  margin-top: 20px; 
-}   
+  margin-top: 20px;  
+  line-height:100%; 
+}  
+
+.rating img {  
+  margin-top: 5px;
+  margin-left:22px;
+} 
 
 #restaurant_descrip { 
   font-family: Museo_300, Helvetica, Verdana, Sans-Serif;
-  font-size:19px;
+  font-size:18px;
   width:380px;
   line-height:150%; 
   padding-bottom:25px;
@@ -168,7 +176,7 @@ body{
 .first_testi {
   background: #fff; 
   width: 270px;   
-  height:145px; 
+  height:340px; 
   margin-top: 25px;
   margin-left:35px; 
   -webkit-border-radius: 7px;
@@ -200,7 +208,7 @@ body{
 .second_testi {
   background: #fff;   
   width: 270px;   
-  height:145px;
+  height:300px;
   margin-top: 10px;
   margin-left:35px; 
   -webkit-border-radius: 7px;
@@ -236,7 +244,7 @@ body{
   padding:10px; 
   border:1px solid #919191;
   width: 200px;
-  height:535px;
+  height:710px;
   float: left;
   color: #333;
   margin: 0 20px 10px 0;    
@@ -257,6 +265,10 @@ body{
 
 .bolded {
   font-family: Museo_700, Helvetica, Verdana, Sans-Serif;
+}   
+
+.top_menu_styling  {
+    font-family: Museo_500, Helvetica, Verdana, Sans-Serif;  
 }
 
 .menu_choices .dish_title {  

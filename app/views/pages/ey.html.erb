@@ -2,8 +2,9 @@
 <html>
 <head>
   <title>LunchBox - Explore the vast food selection that New York City has to offer -- right from your desk.</title>   
-	<%= stylesheet_link_tag "bootstrap", "bootstrap-responsive", "ey_landing" %>
-  <%= javascript_include_tag :all %>
+	<%= stylesheet_link_tag "bootstrap", "bootstrap-responsive", "ey_landing", "jquery.countdown.css" %>
+  <script src="javascripts/jquery.min.js"></script> 
+	<script src="javascripts/jquery.countdown.js"></script>
 	<%= csrf_meta_tag %>
 	<meta http-equiv="Content-type" value="text/html; charset=utf-8" />
 	<meta name="title" content="" />
@@ -13,7 +14,14 @@
 	<meta property="og:site_name" content="LunchBox" />
 	<meta property="og:url" content="http://www.golunchbox.com" />
 	<meta property="og:image" 	content="https://launchrock-assets.s3.amazonaws.com/facebook-files/jlGQLH1gQ1izzAf.png" />
-	<meta property="og:description" content="I just signed up for an exclusive lunch delivery service called LunchBox. They curate the highest quality and unique lunches in the city and will deliver it to my desk!" /> 
+	<meta property="og:description" content="I just signed up for an exclusive lunch delivery service called LunchBox. They curate the highest quality and unique lunches in the city and will deliver it to my desk!" />  
+	 <script>
+	 $(document).ready(function(){    
+	  $("#counter").countdown({until: new Date(2012, 5-1, 1, 18), format: 'dHMS'}); 
+	 	}); 
+		   
+	 
+		</script>
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -27,19 +35,17 @@
 	  })();
 
 	</script>  
-	<script type="text/javascript">
-		$('#timer').countdown({since: new Date(2010, 12-1, 25)});
-	</script>
+	
 </head> 
 
 <body> 
 	<div class="ey_header">   
-		<img src="/images/lunchboxlogo_new.png">
+		<img src="/images/ey_lb_temp_logo.png">
 	</div>   
 	<div class="row">
 		<div class="span4 ey_middle_bar">
 			<div id="pricing">
-				<span class="free_deliv">free delivery</span>
+				<span class="free_deliv">free delivery!</span>
 			</div>  
 			<br>
 			<div class="order_now_button btn btn-success btn-large">
@@ -47,10 +53,9 @@
 			</div>
 			<div id="timer"> 
 				<br> 
-				
-				<!-- <p>Time Left to Buy:
-										#Timer code goes here</p>   -->
-			</div>
+	 			Time left to buy: <div id="counter"></div>
+			</div> 
+		 
 				<div class="row"> 
 				<div class="span4 testimonial">
 					<h4>Testimonials</hr>
@@ -60,7 +65,7 @@
 									<div id="top_testi_quote">
 										<img src="/images/beginning_quotes.png">
 									</div>
-								  <p>This place is a hidden gem and a welcome change to my usual and mundane weekday lunches at Cafe Manhattan. - Arnab M.</p>
+								  <p>Read the other Yelp reviews for details. I'm just chiming in to say that this place is awesome. Yes the sandwiches are not cheap, but you will pay maybe a dollar less to get a really sub-par sandwich at any deli nearby. And these sandwiches are so big that either you will get 2 meals out of them if you are dainty or you will be completely full after eating the whole thing.- Craige M.</p>
 									<div id="bottom_testi_quote">
 										<img src="/images/end_quotes.png">
 									</div>
@@ -71,7 +76,10 @@
 									<div id="top_testi_quote">
 										<img src="/images/beginning_quotes.png">
 									</div>
-							 		<p>The sushi here is so fresh it’s incredible. The attention to detail put into each roll really made the dish special. - Danielle G.</p>
+							 		<p>Just TRY finding someone else who will deliver a 	baguette, sicilian olives, sliced chorizo and soppressata, and three different types of cheese (cubed, well actually, more like "triangulated") to this neighborhood. And have it be AMAZING.<br><br> 
+
+									So yes, this place is the beez kneez. - Aristea A.
+									</p>
 									<div id="bottom_testi_quote">
 										<img src="/images/end_quotes.png">
 									</div>
@@ -86,9 +94,12 @@
 				<img src="/images/steps.png" alt="" > 
 			</div>
 			<div id="restaurant_details">
-				<h1>Sergimmo Salumeria</h1> 
+				<h1>Sergimmo Salumeria</h1>
+				<div class="rating">
+					<a href="http://www.yelp.com/biz/sergimmo-salumeria-new-york" target="blank"><img src="/images/starsyelp.png" alt="" ></a>  
+				</div> 
 				<div id="restaurant_descrip">
-					Try the fresh HOMEMADE mozzarella and cured meats and you’ll understand– one bite and you’ll swear you just teleported to Italy. Each recipe has been finely crafted in Italian farmhouse kitchens and brought to back New York by Sergimmo himself. This food speaks for itself and so does its 4.5 star Yelp rating. 
+					Try the fresh <span class="bolded">HOMEMADE mozzarella and cured meats</span> and you’ll understand– one bite and you’ll swear you just teleported to Italy. Each recipe has been finely crafted in Italian farmhouse kitchens and brought to back New York by Sergimmo himself. This food speaks for itself and so does its 4.5 star Yelp rating. 
 				</div>
 			</div>  
 			<div id="divider"></div> 
@@ -97,15 +108,15 @@
 					<ul> 
 						<li> 
 							<div class="dish_title">
-								 <span class="menu_item_name">Marche Panini</span> | $12.99<br><br>
+								 <span class="bolded">Marche Panini</span> | $12.99<br><br>
 							</div>
 							<div class="dish_image"> 
 								<img src="/images/leftmenu.png" alt="" >
 							</div> 
-							<div class="add-on">Includes homemade rice ball</div>
+							<div class="add_on">Includes homemade rice ball</div>
 							<div class="menu_divider"></div>
 							<div class="dish_description">
-								Thin-sliced salami • fresh homemade mozzarella • marinated artichokes • arugula • balsamic vinegar • Serggimmo’s extra virgin olive oil<br><br>
+								<span class="top_menu_styling">Thin-sliced salami • fresh homemade mozzarella • marinated artichokes • arugula • balsamic vinegar • Serggimmo’s extra virgin olive oil</span><br><br>
 								This sandwich starts with a substantial but not overpowering layer of freshly sliced salami: well-spiced, porky, and studded with fennel seeds. The salami is topped with mozzarella— that's creamy, salty, homemade mozzarella— a batch of which is made every two hours. Next up is a layer of artichokes, which are marinated in an herb oil. A solid layer of arugula really ties the sandwich together and the greens provide a peppery, bitter bite.<br>  
 							</div>
 						</li>
@@ -117,10 +128,10 @@
 							<div class="dish_image">
 								<img src="/images/middlemenu.png" alt="" >
 							</div>       
-							<div class="add-on">Includes homemade rice ball</div>
+							<div class="add_on">Includes homemade rice ball</div>
 							<div class="menu_divider"></div>
 							<div class="dish_description">
-								Grilled chicken • fresh homemade mozzarella • sundried tomatoes • arugula • balsamic vinegar • Serggimmo’s extra virgin olive oil<br><br>
+								<span class="top_menu_styling">Grilled chicken • fresh homemade mozzarella • sundried tomatoes • arugula • balsamic vinegar • Serggimmo’s extra virgin olive oil</span><br><br>
 
 								The Massimo Il Grande is even better than its regal name implies. The ingredients appear simple, but the flavors they produce are rich and complex. The chicken is  grilled to perfection, topped with Sergimmo’s creamy, salty mozzerella made fresh in batches every two hours.
 								The sundried tomatoes provide a slightly sweet accent to the tang of balsamic vinegar, and the Massimo’s ingredients unite under the perfect amount of fresh, crunchy arugula. 
@@ -136,28 +147,22 @@
 							<div class="dish_image">
 								<img src="/images/rightmenu.png" alt="" >
 							</div>         
-							<div class="add-on">Includes homemade rice ball</div>
+							<div class="add_on">Add a rice ball for $2.50</div>
 							<div class="menu_divider"></div> 
 							<div class="dish_description">
-								<strong>Leave the Bread behind</strong>,
-								create a Plate!
-								Choice of any 4:
-								SALUMI (meats)
+								<span class="bolded">Leave the Bread behind,
+								create a Plate!</span><br>
+								<i>Choice of any 4</i>:<br>
+								<span class="bolded">SALUMI (meats)</span><br>
 								Speck • Bresaola • Capicola • Prosciutto 
 								Sorppressta • Mortadella
 								Parma Cotto • Culatello • Chorizo • Rosemary Ham
-								FORMAGGI (cheeses)
+								<span class="bolded">FORMAGGI (cheeses)</span><br>
 								Brie • Asiago • Primo Sale • Manchego • Ricotta Salata 
-								Fiori Di Sardegna • Fontina • Val D’aosta • Parmigiano Reggiano 
-								Moliterno • Gorgonzola 
+								Fiori Di Sardegna • Fontina • Val D’aosta • Parmigiano Reggiano Moliterno • Gorgonzola<br><br>
 
 								All plates are served with your choice of Serigmmo’s Extra Virgin Olive Oil, or Preserves of Fig
 
-								Selection of four $14.99
-								<strong>1.</strong> Choice of 10 types of bagels and 5 flavored cream cheeses PLUS optional fresh sliced salmon (We recommend trying this!)<br>
-								<strong>-AND-</strong><br>
-								<strong>2.</strong> Fresh, crisp romaine  lettuce w/ your choice of 20+ toppings.<br> 
-								Tossed with your choice of 10 house dressings.
 							</div>
 						</li>
 					</ul>

@@ -13,5 +13,9 @@ class PagesController < ApplicationController
   end 
   
   def ey
+  end  
+  
+  def landing
+    
   end
 end

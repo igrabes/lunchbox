@@ -7,7 +7,8 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3'  
 gem 'jquery-rails'
-gem 'mail'
+gem 'mail'                                                                                                                  
+gem 'gmaps4rails'
 
 group :development, :test do
   gem 'pry'

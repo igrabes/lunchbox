@@ -2,16 +2,18 @@
 
 <table>
   <tr>
+    <th>Region</th>
     <th></th>
-    <th></th>
-    <th></th>
+    <th></th> 
+		<th></th>
   </tr>
 
 <% @subscribers.each do |subscriber| %> 
 
-  <tr>                               
+  <tr> 
+		<td><%= subscriber.zipcode %></td>
 		<td><%= subscriber.email %></td>
-    <td><%= subscriber.address %></td>
+    <td><%= subscriber.restaurants.map { |x| x.name } %></td>
     <td><%= link_to 'Show', subscriber %></td>
     <td><%= link_to 'Edit', edit_subscriber_path(subscriber) %></td>
     <td><%= link_to 'Destroy', subscriber, :confirm => 'Are you sure?', :method => :delete %></td>

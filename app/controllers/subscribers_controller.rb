@@ -23,9 +23,10 @@ class SubscribersController < ApplicationController
 
   # GET /subscribers/new
   # GET /subscribers/new.xml
-  def new
-    @subscriber = Subscriber.new   
-
+  def new   
+    @subscriber = Subscriber.new  
+    @restaurants = Restaurant.all     
+    # binding.pry  
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @subscriber }
@@ -39,19 +40,15 @@ class SubscribersController < ApplicationController
 
   # POST /subscribers
   # POST /subscribers.xml
-  def create
-    @subscriber = Subscriber.new(params[:subscriber])    
-
-    respond_to do |format|
-      if @subscriber.save
-        format.html { redirect_to(@subscriber, :notice => 'Subscriber was successfully created.') }
-        format.xml  { render :xml => @subscriber, :status => :created, :location => @subscriber }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @subscriber.errors, :status => :unprocessable_entity }
-      end
+  def create   
+    @subscriber = Subscriber.new(params[:subscriber])   
+    if @subscriber.save
+      redirect_to subscribers_path
+    else
+      raise "This is the else conditional"
     end
   end
+
 
   # PUT /subscribers/1
   # PUT /subscribers/1.xml

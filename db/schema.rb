@@ -10,11 +10,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120426012012) do
+ActiveRecord::Schema.define(:version => 20120509214653) do
+
+  create_table "regions", :force => true do |t|
+    t.string   "region"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "restaurants", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "subscriber_restaurants", :force => true do |t|
+    t.integer  "subscriber_id"
+    t.integer  "restaurant_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "subscribers", :force => true do |t|
     t.string   "email"
-    t.string   "address"
+    t.integer  "zipcode"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

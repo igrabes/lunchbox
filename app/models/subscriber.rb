@@ -1,16 +1,18 @@
-class Subscriber < ActiveRecord::Base      
+class Subscriber < ActiveRecord::Base   
+  has_many :subscriber_restaurants
+  has_many :restaurants, :through => :subscriber_restaurants  
   
-  acts_as_gmappable
-
-  attr_accessor :gmaps
-
-    def gmaps4rails_address
-      self.address
-    end
-
-   def gmaps
-   end
-   
+   accepts_nested_attributes_for :restaurants  
+  
 end       
+
+
+
+
+
+
+
+
+
 
 

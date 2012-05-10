@@ -1,7 +1,27 @@
 Lunchbox::Application.routes.draw do
+  resources :restaurants
+
+    match '/chelsea' => 'regions#chelsea'
+  match '/east_village' => 'regions#east_village'
+  match '/financial_district' => 'regions#financial_district'
+  match '/gramercy' => 'regions#gramercy'
+  match '/greenwich_village' => 'regions#greenwich_village'
+  match '/lower_east_side' => 'regions#lower_east_side'
+  match '/midtown_east' => 'regions#midtown_east'
+  match '/midtown_west' => 'regions#midtown_west'
+  match '/soho' => 'regions#soho'
+  match '/times_square' => 'regions#times_square'
+  match '/tribeca' => 'regions#tribeca'
+  match '/upper_east_side' => 'regions#upper_east_side'
+  match '/upper_west_side' => 'regions#upper_west_side'  
+  match '/unclock' => 'regions#unlock'
   
-  match '/signup' => 'subscribers#new' 
+   
+  
+  
   resources :subscribers
+  match '/signup' => 'subscribers#new' 
+  
   
   
   match '/signup_now' => "users#new"
@@ -16,6 +36,7 @@ Lunchbox::Application.routes.draw do
   
   match '/order' => 'pages#order' 
   match '/ey' => 'pages#ey'
+  match '/landing' => 'pages#landing'
  
   # The priority is based upon order of creation:
   # first created -> highest priority.

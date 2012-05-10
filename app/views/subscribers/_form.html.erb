@@ -9,18 +9,48 @@ $(document).ready(function () {
 });
 </script>
 
-<%= form_for(@subscriber) do |f| %>
-	
-	<div class="step step1">
-		<%= f.label :address %>
-		<%= f.text_field :address %>
-		<button class="continue">Continue</button>
-	</div>
-	<div class="step step2">
+<%= form_for(@subscriber) do |f| %> 
+	<div class="step step1"> 
+		<%= f.label :zipcode %>
+		<%= f.text_field :zipcode %>
+		 <br \>
+				<button class="continue">Continue</button>
+			</div>
+			<div class="step step2">
 		<%= f.label :email %>
-		<%= f.text_field :email %>
-    <%= f.submit %>
+		<%= f.text_field :email %> 
+		<button class="continue">Continue</button>
+	 </div>
+	  <div class="step step3"> 
+	 
+		<%= f.label :restaurants %>
+		 <% @restaurants.each do |r| %>
+			 <%= check_box_tag "subscriber[restaurant_ids][]", r.id  %> <%= r.name %>
+		 <% end %>
+		 
+    <%= f.submit "Sign In" %>
   </div>
-<% end %>
+<% end %>  
 
 
+
+<!-- </%= form_tag(@subscriber) do |f| %> 
+	<div class="step step1"> 
+	</%= f.fields_for :regions do |builder| %>  
+		</%= builder.label :region %> 
+		</%= select_tag("region", options_from_collection_for_select(@regions, "id", "region")) %>
+		<! </%= select_tag("region", options_from_collection_for_select(Region::Regions, :last, :first))%> -->
+		<!-- <br \> 
+				</% end %>
+					<!</%= builder.label :region %> -->
+					<!-- </%= builder.select("region", "subscriber", )%> -->
+					<!-- <br \>
+								  
+											<button class="continue">Continue</button>
+										</div>
+										<div class="step step2">
+									</%= f.label :email %>
+									</%= f.text_field :email %>
+							    </%= f.submit "Sign In" %>
+							  </div>
+							</% end %>       -->
